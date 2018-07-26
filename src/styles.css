@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.base-color {
+  background-color: #567d96;
+}
+
+.padding-30-both {
+  padding-left: 30px;
+  padding-right: 30px;
+}

@@ -10,6 +10,9 @@ export class NavHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
   }
 
 }
