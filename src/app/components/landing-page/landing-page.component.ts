@@ -15,7 +15,6 @@ export class LandingPageComponent implements OnInit {
   public gamesConst = games;
 
   ngOnInit() {
-    Utility.toast(messages.login_success, infoType.success);
   }
 
 }
