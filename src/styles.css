@@ -1,15 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* Colors */
-
-.base-color {
-  background-color: #567d96;
-}
-
-.button-bg-color {
-  background-color: #445a65;
-}
-
 @import url('assets/css/height-width.css');
 /* Width */
 
@@ -22,6 +12,16 @@
 .padding-30-both {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/* Colors */
+
+.base-color {
+  background-color: #567d96;
+}
+
+.button-bg-color {
+  background-color: #445a65;
 }
 
 /* elements */
