@@ -1,10 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Colors */
+
 .base-color {
   background-color: #567d96;
 }
 
+.button-bg-color {
+  background-color: #445a65;
+}
+
+@import url('assets/css/height-width.css');
+/* Width */
+
+@import url('assets/css/border-radius.css');
+/* rounded-corners || border-radius */
+
+@import url('assets/css/font-faces.css');
+/* Alignments */
+
 .padding-30-both {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/* elements */
+
+.landing-buttons {
+  background-color: #445a65;
+  height: 70px;
+  width: 250px;
+  border-radius: 20px;
+}
+
+.landing-buttons:hover {
+  background-color: #445a65;
 }
