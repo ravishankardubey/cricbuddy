@@ -11,7 +11,7 @@ export class NavHeaderComponent implements OnInit {
 
   ngOnInit() {
     $(document).ready(function () {
-      $('.sidenav').sidenav();
+      $('.sidenav').sideNav();
     });
   }
 

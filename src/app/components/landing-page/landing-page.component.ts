@@ -1,4 +1,6 @@
+import { Utility } from './../../utility/Utility';
 import { Component, OnInit } from '@angular/core';
+import { headings, games, infoType, messages } from './../../config/constants';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,7 +11,11 @@ export class LandingPageComponent implements OnInit {
 
   constructor() { }
 
+  public headingsConst = headings;
+  public gamesConst = games;
+
   ngOnInit() {
+    Utility.toast(messages.login_success, infoType.success);
   }
 
 }
