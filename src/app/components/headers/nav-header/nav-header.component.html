@@ -2,26 +2,59 @@
   <div class="site-header base-color">
     <nav class="site-header base-color">
       <div class="nav-wrapper padding-30-both">
-          <a href="#" class="brand-logo">Cric<b>Buddy</b></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><span class="mdi mdi-account">Log In</span></li>
-            <li class="seperator"></li>
-            <li>
-              <div class="search-bar">
-              </div>
-            </li>
-          </ul>
-        </div>
-        </nav>
+        <a href="#" class="brand-logo font-montserrat">{{headingsConst.appName}}</a>
+        <ul class="right hide-on-med-and-down">
+          <li class="site-header-items">
+            <span class="mdi mdi-account">Log In</span>
+          </li>
+          <li class="site-header-items">
+            <div class="search-bar">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
   <nav class="white nav-header">
     <div class="nav-wrapper">
-        
-      <!-- <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-      </ul> -->
+      <ul class="full-width hide-on-med-and-down">
+        <li class="nav-item-padding "><a class="nav-items" routerLink="#">{{navbarLabelsConst.liveMatches}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding "><a class="nav-items" routerLink="#">{{navbarLabelsConst.schedule}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding "><a class="dropdown-trigger nav-items" data-target="dropdown-series">{{navbarLabelsConst.series}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding "><a class="nav-items" routerLink="#">{{navbarLabelsConst.teams}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding "><a class="nav-items" routerLink="#">{{navbarLabelsConst.rankings}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding "><a class="dropdown-trigger nav-items" data-target="dropdown-news">{{navbarLabelsConst.news}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding "><a class="nav-items" routerLink="#">{{navbarLabelsConst.fantasyLeagues}}</a></li>
+        <li class="seperator"></li>
+        <li class="nav-item-padding"><a class="dropdown-trigger nav-items" data-target="dropdown-more">{{navbarLabelsConst.more}}</a></li>
+      </ul>
     </div>
   </nav>
 </div>
+
+<!-- Dropdowns -->
+<ul id="dropdown-series " class="dropdown dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li><a href="#!">three</a></li>
+</ul>
+
+<ul id="dropdown-news" class="dropdown dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+</ul>
+
+<ul id="dropdown-more" class="dropdown dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+</ul>

@@ -4,7 +4,7 @@ export const games = {
 };
 
 export const headings = {
-    'appHeading': 'cricbuddy',
+    'appName': 'Cricbuddy',
     'appTagLine': `It's time to play and win!`
 };
 
@@ -17,5 +17,16 @@ export const infoType = {
 export const messages = {
     'login_success': 'Login Successful !',
     'login_error': 'Login Error !'
+};
+
+export const navbarLabels = {
+    'liveMatches': 'Live Matches',
+    'schedule': 'Schedule',
+    'series': 'Series',
+    'teams': 'Teams',
+    'rankings': 'Rankings',
+    'news': 'News',
+    'fantasyLeagues': 'Fantasy Leagues',
+    'more': 'More'
 };
 

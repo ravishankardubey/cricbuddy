@@ -26,6 +26,11 @@
   padding-top: 100px !important;
 }
 
+.padding-1perc-both{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
 
 /* Colors */
 
@@ -67,6 +72,12 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   color: #06050a;
+}
+
+.dropdown-trigger::after{
+  color: black;
+  content: "\F35D";
+  font-family: "Material Design Icons";
 }
 
 @media screen and (max-width:700px) {

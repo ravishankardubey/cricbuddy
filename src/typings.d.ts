@@ -1,6 +1,6 @@
 /* SystemJS module definition */
 declare var module: NodeModule;
-declare var Materialize:any;
+declare var M: any;
 interface NodeModule {
   id: string;
 }
