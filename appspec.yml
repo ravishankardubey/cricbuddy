@@ -27,11 +27,11 @@ hooks:
       timeout: 180
 os: linux
 permissions: 
-  ? "-object"
-  : usr/project01/codedeploy
-  group: root
-  mode: 755
-  owner: root
-  pattern: "*.sh"
-  type: "-file"
+  - 
+    group: root
+    mode: 755
+    object: usr/project01/codedeploy
+    owner: root
+    pattern: "*.sh"
+    type: "-file"
 version: 0.0
