@@ -1,30 +1,37 @@
-version: 0.0
+--- 
+files: 
+  - 
+    destination: /usr/project01
+    overwrite: true
+    source: /
+hooks: 
+  AfterInstall: 
+    - 
+      location: codeDeploy/after_install.sh
+      timeout: 180
+  ApplicationStart: 
+    - 
+      location: codeDeploy/application_start.sh
+      timeout: 180
+  ApplicationStop: 
+    - 
+      location: codeDeploy/application_stop.sh
+      timeout: 180
+  BeforeInstall: 
+    - 
+      location: codeDeploy/before_instal.sh
+      timeout: 180
+  ValidateService: 
+    - 
+      location: codeDeploy/application_validation.sh
+      timeout: 180
 os: linux
-files:
-  - source: /
-  destination: /usr/project01
-  overwrite: true
-permissions:
-  -object: usr/project01/codedeploy
-  pattern: "*.sh"
-  owner: root
+permissions: 
+  ? "-object"
+  : usr/project01/codedeploy
   group: root
   mode: 755
-  type:
-    -file
-hooks:
-  BeforeInstall:
-  - location: codeDeploy/before_instal.sh
-    timeout: 180
-  AfterInstall: 
-  - location: codeDeploy/after_install.sh
-    timeout: 180
-  ApplicationStop:
-  - location: codeDeploy/application_stop.sh
-    timeout: 180
-  ApplicationStart:
-  - location: codeDeploy/application_start.sh
-    timeout: 180
-  ValidateService:
-  - location: codeDeploy/application_validation.sh
-    timeout: 180
+  owner: root
+  pattern: "*.sh"
+  type: "-file"
+version: 0.0
