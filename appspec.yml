@@ -14,7 +14,7 @@ hooks:
     - location: codeDeploy/application_stop.sh
       timeout: 180
   BeforeInstall: 
-    - location: codeDeploy/before_instal.sh
+    - location: codeDeploy/before_install.sh
       timeout: 180
   ValidateService: 
     - location: codeDeploy/application_validation.sh
